@@ -1,0 +1,8 @@
+{
+    "name": "vcpkg-one-liner",
+    "version": "0.0.1",
+    "builtin-baseline": "abf52dd1adb482e21fb89d1125d4fed6b79dfc07",
+    "dependencies": [
+        "zlib"
+    ]
+}
