@@ -1,0 +1,22 @@
+{
+  "registries": [
+    {
+      "name": "local",
+      "location": "c:\\Dev\\vcpkg-ce-catalog",
+      "kind": "artifact"
+    },
+    {
+      "name": "microsoft",
+      "location": "https://aka.ms/vcpkg-ce-default",
+      "kind": "artifact"
+    }
+  ],
+  "requires": {
+    "local:crts/microsoft/desktop": "* 14.29.30037",
+    "local:crts/microsoft/headers": "* 14.29.30037",
+    "local:tools/ninja-build/ninja": "* 1.10.2",
+    "local:tools/kitware/cmake": "* 3.20.1",
+    "local:sdks/microsoft/windows": "* 10.0.19041",
+    "microsoft:tools/kitware/cmake": "* 3.20.1"
+  }
+}

@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
-project(vcpkg-one-liner CXX)
+
+project(TestProgram CXX)
 find_package(ZLIB REQUIRED)
-add_executable(main main.cpp)
-target_link_libraries(main PRIVATE ZLIB::ZLIB)
+add_executable(program program.cpp)
+target_link_libraries(program PRIVATE ZLIB::ZLIB)
