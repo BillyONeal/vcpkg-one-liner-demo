@@ -1,8 +1,5 @@
 {
   "name": "test-program",
   "version-semver": "0.0.1",
-  "builtin-baseline": "75ae1ef84437bc457fb4db54360f88af57bb158a",
-  "dependencies": [
-        "zlib"
-  ]
+  "builtin-baseline": "75ae1ef84437bc457fb4db54360f88af57bb158a"
 }

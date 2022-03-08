@@ -1,22 +1,8 @@
-Speech about how experimental this is :)
+git clone git@github.com:BillyONeal/vcpkg-one-liner-demo
 iex (iwr -useb https://aka.ms/vcpkg-init.ps1)
 vcpkg  (show that it works)
 (open new window, show that vcpkg cmake ninja all don't work)
-robocopy D:\ C:\Users\Administrator\Desktop\demo
-. ~/.vcpkg/vcpkg-init.ps1
-vcpkg use cmake ninja
-cmake -G Ninja "-DCMAKE_TOOLCHAIN_FILE=$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" -S . -B ..\build
+vcpkg activate --target:x86
+cmake -G Ninja -S . -B ..\build
 ninja -C ..\build
-..\build\main.exe
-
-Future:
-Bugs bugs bugs
-Usability testing
-Command line options to edit the project e.g. vcpkg add port zlib
-Getting the C++ compilers in here so you don't need full VS installed first
-
-Bugs:
-npm spew
-vcpkg add artifact doesn't see vcpkg.json
-. ~/.vcpkg/vcpkg-init runs the .cmd
-cmake version for vcpkg and artifacts don't agree
+..\build\program.exe
